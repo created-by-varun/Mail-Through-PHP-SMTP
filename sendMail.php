@@ -3,6 +3,7 @@
     require 'phpmailer/PHPMailerAutoload.php';
 
     // TODO :: Verify if the entered emailIDs are valid
+    // Make compatible with other mail services too
 
     $senderUserName = $_GET['userMailId'];
     $senderName = $_GET['UserName'];
