@@ -2,13 +2,14 @@
 
     require 'phpmailer/PHPMailerAutoload.php';
 
-    //variables
+    $senderUserName = $_GET['userMailId'];
+    $senderName = $_GET['UserName'];
+    $senderPassword = $_GET['userPassword'];
 
-    $senderUserName = 'UserMailId@gmail.com';
-    $senderName = 'UserName';
-    $senderPassword = 'UserPassword';
+    $recieverID = $_GET['targetMailId'];
+    $MailSubject = $_GET['mail_subject'];
+    $MailBody = $_GET['mail_body'];
 
-    $recieverID = 'reciever@gmail.com';
 
     $mail = new PHPMailer;
     $mail->isSMTP(); //disable line in case of live hosting server
@@ -28,9 +29,9 @@
 
     $mail->addReplyTo($senderUserName);
 
-    $mail->isHTML(true);
-    $mail->Subject='Subject of the Email';
-    $mail->Body='<center><h1>Hello</h1><br><h3>This is a test mail</h3></center>';
+    $mail->isHTML(false);
+    $mail->Subject=$MailSubject;
+    $mail->Body= $MailBody;
     
     if(!$mail->send()){
         echo "Mail could not be sent!";
