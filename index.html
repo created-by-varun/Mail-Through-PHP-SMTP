@@ -8,8 +8,21 @@
 </head>
 <body>
 
-    <form action="sendMail.php" method="POST">
-        
+    <form action="sendMail.php" method="GET">
+        <label>Your Name: </label>
+        <input type="text" name = "UserName"> <br>
+        <label>Your Email: </label>
+        <input type="text" name = "userMailId"> <br>
+        <label>Your Password: </label>
+        <input type="password" name = "userPassword"> <br>
+        <label>Target Email: </label>
+        <input type="text" name = "targetMailId"> <br> <br>
+        <label>Subject of Mail: </label>
+        <input type="text" name = "mail_subject" size="40"> <br> <br>
+        <label>Body of mail:  </label>
+        <input style="width: 70%; height: 100px" type="text" name = "mail_body"> <br> <br>
+
+        <input type="submit" value="Send Mail">
     </form>
     
 </body>
