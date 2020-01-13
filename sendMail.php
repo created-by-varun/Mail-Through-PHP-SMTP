@@ -2,6 +2,8 @@
 
     require 'phpmailer/PHPMailerAutoload.php';
 
+    // TODO :: Verify if the entered emailIDs are valid
+
     $senderUserName = $_GET['userMailId'];
     $senderName = $_GET['UserName'];
     $senderPassword = $_GET['userPassword'];
