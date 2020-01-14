@@ -3,13 +3,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .site-title {
     padding-top: 10%;
 }
 
-.header-text{
+.header-text {
     padding: 10px;
     background-color: rgba(177, 181, 231, 0.609);
     border-radius: 20px;
@@ -25,7 +26,7 @@ input {
     padding: 7px;
     margin: 10px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     border: none;
     outline: none;
     color: #333;
