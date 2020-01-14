@@ -37,9 +37,9 @@
     $mail->Body= $MailBody;
     
     if(!$mail->send()){
-        echo "Mail could not be sent!";
+        echo "<h3>Mail could not be sent!<h3><h3>Please check the details you entered and try again...<h3> <a href='index.html'>Click here to go back</a>";
     }
     else {
-        echo "Mail has been sent!";
+        echo "<h3>Mail has been sent!<h3> <a href='index.html'>Click here to go back</a>";
     }
 ?>
