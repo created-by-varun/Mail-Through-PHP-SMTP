@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>Mailer</title>
 </head>
 
@@ -16,27 +18,27 @@
     <!-- 
         TODO:  add css or bootstrap styles, improve UI
     -->
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
                 <div class="header-text">
-                <h1 class="text-center">Mail using PHPMailer and SMTP:</h1>
-                <h4 class="text-center">(currently works only with gmail addresses)</h4>
-            </div>
+                    <h1 class="text-center">Mail using PHPMailer and SMTP:</h1>
+                    <h4 class="text-center">(currently works only with gmail addresses)</h4>
+                </div>
             </div>
 
             <div class="col-lg-6 col-md-12 mail-form">
 
-                <h3>Enter your details</h3>
+                <h3>Enter your details</h3> <hr>
                 <form action="sendMail.php" method="GET">
                     <input type="text" name="UserName" placeholder="Your Name"> <br>
                     <input type="text" name="userMailId" placeholder="Your emailID"> <br>
                     <input type="password" name="userPassword" placeholder="Your email password"> <br>
-                    <input type="text" name="targetMailId" placeholder="to: (reciever's email)"> <br> 
-                    <input type="text" name="mail_subject" size="40" placeholder="Subject"> <br> 
+                    <input type="text" name="targetMailId" placeholder="to: (reciever's email)"> <br>
+                    <input type="text" name="mail_subject" size="40" placeholder="Subject"> <br>
                     <input style="height: 100px;" type="text" name="mail_body" placeholder="Body of mail"> <br>
-            
+
                     <input type="submit" value="Send Mail">
                 </form>
 
