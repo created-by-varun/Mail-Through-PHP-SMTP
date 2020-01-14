@@ -13,6 +13,8 @@ body {
     padding: 10px;
     background-color: rgba(177, 181, 231, 0.609);
     border-radius: 20px;
+    box-shadow: 3px 3px #0000005b;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.335);
 }
 
 .mail-form {
